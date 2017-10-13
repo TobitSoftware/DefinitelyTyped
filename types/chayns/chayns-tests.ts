@@ -1,10 +1,8 @@
 // Test file for chayns typings
 
-import {chayns} from "./index";
-
 chayns.register({
     strictMode: false,
-    appName: 'chayns-typings-test',
+    appName: 'chayns-typings-test'
 });
 
 chayns.ready.then(data => {
@@ -13,4 +11,4 @@ chayns.ready.then(data => {
     return err;
 });
 
-chayns.dialog.alert('Chayns Typings', 'Test chayns typings');
+chayns.dialog.alert('chayns-typings', 'Test chayns-typings!');
