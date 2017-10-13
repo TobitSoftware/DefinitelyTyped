@@ -1,11 +1,11 @@
-// Type definitions for chayns 3.1
+// Type definitions for chayns 3.1.1
 // Project: https://github.com/TobitSoftware/chayns-js
 // Definitions by: Henning Kuehl <https://github.com/HenningKuehl>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 
 /**
- * Definition file for chayns v3.1
+ * Definition file for chayns v3.1.1
  */
 declare namespace chayns {
     /**
@@ -417,6 +417,8 @@ declare namespace chayns {
 
             function addItem(item: ModeSwitchItem, index?: number): void;
 
+            function removeItem(id: number): void;
+
             function changeMode(item: number | ModeSwitchItem): void;
 
             function remove(): void;
@@ -508,7 +510,7 @@ declare namespace chayns {
          * Miscellaneous
          * chayns.utils
          */
-        function getJwtPayload(token: string): JwtPaylod;
+        function getJwtPayload(token: string): any;
 
         function mod(number: number, modulo: number): number;
 
